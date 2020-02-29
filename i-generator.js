@@ -17,7 +17,5 @@ function iGenerator() {
     kataAkhir = kataAkhir.replace(/o/g, penggantiLowerCase)
 
     document.getElementById("hasilKata").value = kataAkhir
-    console.log(kataAkhir)
-
 }
 
