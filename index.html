@@ -15,9 +15,27 @@
             <div class="input-group-prepend">
               <span class="input-group-text">Kata Awal</span>
             </div>
-            <textarea placeholder="Masukkan Kata yang Ingin anda ubah" class="form-control" aria-label="With textarea" name="kataAwal" id="kataAwal" rows="5" cols="50" onkeyup="iGenerator()"></textarea>
+            <textarea placeholder="Masukkan Kata yang Ingin anda ubah" class="form-control" aria-label="With textarea" name="kataAwal" id="kataAwal" rows="5" cols="50"></textarea>
           </div>
-          <input type="button" class="btn btn-primary my-2" value="Generate-I" onclick="iGenerator()">
+        
+          <div class=" btn-group-toggle my-2" data-toggle="buttons">
+            <label class="btn btn-primary active">
+              <input type="radio" name="generate" id="generate-i" value='i' onclick="handleClick(this)" checked> Generate-I
+            </label>
+            <label class="btn btn-primary">
+              <input type="radio" name="generate" id="generate-a" value='a' onclick="handleClick(this)"> Generate-A
+            </label>
+            <label class="btn btn-primary">
+              <input type="radio" name="generate" id="generate-u" value='u' onclick="handleClick(this)"> Generate-U
+            </label>
+            <label class="btn btn-primary">
+              <input type="radio" name="generate" id="generate-e" value='e' onclick="handleClick(this)"> Generate-E
+            </label>
+            <label class="btn btn-primary">
+              <input type="radio" name="generate" id="generate-o" value='o' onclick="handleClick(this)"> Generate-O
+            </label>
+          </div>
+          
           <div class="input-group">
             <div class="input-group-prepend">
               <span class="input-group-text">Hasil</span>
